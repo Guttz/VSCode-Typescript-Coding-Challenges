@@ -31,4 +31,4 @@ console.log(validPalindrome("acbca"));
 console.log(validPalindrome("axcbca"));
 console.log(validPalindrome("acbxca"));
 console.log(validPalindrome("aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga"));
-//# sourceMappingURL=palidrom.js.map
+//# sourceMappingURL=Palidrom.js.map
