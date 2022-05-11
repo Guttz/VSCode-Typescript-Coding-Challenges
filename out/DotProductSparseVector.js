@@ -3,7 +3,6 @@ var SparseVector = /** @class */ (function () {
         var _this = this;
         this.vectorSize = 0;
         this.numsHash = [];
-        this.numsMap = new Map();
         this.vectorSize = nums.length;
         nums.forEach(function (num, index) {
             if (num !== 0)
@@ -23,8 +22,6 @@ var SparseVector = /** @class */ (function () {
         var _this = this;
         return Object.entries(vec.numsHash).reduce(function (prevValue, currValue) {
             var index = currValue[0], value = currValue[1];
-            console.log(index, value);
-            console.log(prevValue + value * _this.getValue(+index));
             return prevValue + value * _this.getValue(+index);
         }, 0);
     };
