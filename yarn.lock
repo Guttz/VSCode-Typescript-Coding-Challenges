@@ -349,6 +349,65 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@datastructures-js/binary-search-tree@^4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/binary-search-tree/-/binary-search-tree-4.3.1.tgz#b0842c1587773fd6e1c95f68cd0c2113dc984c44"
+  integrity sha512-YmxFM5zBz3E9vCnXUidDgOgUaWNqYBqjJp9EkAc3dInpNcq5qutVfJJxI3P4RDUl9DV6wzADN7shqIA1YQI93g==
+
+"@datastructures-js/deque@^1.0.1":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/deque/-/deque-1.0.2.tgz#143ebeffb3a699de2d240819b64d27cc398f058a"
+  integrity sha512-iYVaUFzr9alSWTDxLw8bpcQKp73uq/cD78SmRyLL9ss6r2fakb/VswmtUZHvbg6+8WGRi/1lxNutdIjA1AZklg==
+
+"@datastructures-js/graph@^5.1.1":
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/graph/-/graph-5.1.3.tgz#4a8fc2a55b8d9b4cdd1f18b70b53d0b5bc6cacd2"
+  integrity sha512-ktGf2xgqxzheRJubx8FjZXWWV6BwAyl0Ab2bfmo9KOnfjn8qFWJa4oCqMNoUyQElOo8Qox9mBaksV4+Du1cvCw==
+  dependencies:
+    "@datastructures-js/queue" "^3.1.3"
+
+"@datastructures-js/heap@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/heap/-/heap-3.2.0.tgz#d8fcdbf58c462c8a3f0fdfd9c6a57ca11505321e"
+  integrity sha512-FcU5ZAyb+VIOZz1HABsJUsbJi2ZyUDO7aoe97hq4d3tK3z8nMgwdxf5bO0gafR0ExFi18YTspntqHLzt4XOgnA==
+
+"@datastructures-js/linked-list@^5.1.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/linked-list/-/linked-list-5.2.1.tgz#c3f0700026f0e469fe1cb797acd47b77d81b0dca"
+  integrity sha512-l54YlAekuZQnCVbRF/xD0BpR3MxuM83mnGW/J3qbrwOcFjdghuNSxWpFqqNcotSyrAPPOgCfsXcLll17gOsdpg==
+
+"@datastructures-js/priority-queue@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/priority-queue/-/priority-queue-5.3.0.tgz#89afce79a19a3226c12cc6e9288f94ff60af26cf"
+  integrity sha512-0Dl0UooE9Uzz85qBP46HTjQHS5GN7NMNluN5/nMfxQAndG/1eNBJpBntLGT5QJarvMO3poLNBJzA3S4GPajp+w==
+  dependencies:
+    "@datastructures-js/heap" "^3.2.0"
+
+"@datastructures-js/queue@^3.1.3":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/queue/-/queue-3.1.4.tgz#785bcbe29af6003934fd0e7849295d62543dba5d"
+  integrity sha512-8QqkdAJQDDd25OBX28lKj7HXD+Cxs6Ee0ogJkZUjD5R1fAvRAWsrCeKop0szqANYjMwdQQd75vyc3Cm8qNJH+Q==
+
+"@datastructures-js/queue@^4.1.3":
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/queue/-/queue-4.1.4.tgz#7e3f74c8bd7929f8bdc11022987f187d5a439010"
+  integrity sha512-r1UEPBbr5V8gfW4SpkXHaIfTUh0E9Y6W/Q7kCugmZXH6cYA4ArMgm4BHyulss/qi0Pp/5yMuNLBD1lNOz3DkSg==
+
+"@datastructures-js/set@^4.1.1":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/set/-/set-4.1.2.tgz#22df29eb57a850efe8ae561391e886a9c4f0092a"
+  integrity sha512-hXVu4QRQ/kgogTIsCOS8JgtXMKJN6GSvs2VtSXAzr/BuukeXMx8HPLYJrT7B2nVvijYAwE2kz3UJY24vgwJOjA==
+
+"@datastructures-js/stack@^3.1.2":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/stack/-/stack-3.1.3.tgz#6acc0994bd7ed1679b5932afc128d28cc48bec38"
+  integrity sha512-SMqL5ZaK787grYKkW7wJw48q2qYKd/IPcaKVOmdVJQK3cUa3A/NYE9Aab58ZcTZKAjIJd31KAtWzcuFvhTzsBA==
+
+"@datastructures-js/trie@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@datastructures-js/trie/-/trie-4.2.0.tgz#d1d42694befa43bae4aa5d2f6d7bc3ca944cb279"
+  integrity sha512-IYn0XTl25ZMmBQNuw15khMPFiL9zf+poDYyWjDN1EJQrqvstSW0yX28/+EnB220bZswE0A4OvnfOWZL0xQ0qHQ==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -972,6 +1031,22 @@ cross-spawn@^7.0.3:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
     which "^2.0.1"
+
+datastructures-js@^10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/datastructures-js/-/datastructures-js-10.2.0.tgz#2701c73c51959119a1af6e900f4198f6d5ed7d5f"
+  integrity sha512-tNhdAS8Ys37k9ZMT8BTUYc5UKQ1Qr9l6/NvuryQHu1wYVWXNLGKo4Xghjkij8N/PtB0OPZmcuCJFLKTlppBbvw==
+  dependencies:
+    "@datastructures-js/binary-search-tree" "^4.3.1"
+    "@datastructures-js/deque" "^1.0.1"
+    "@datastructures-js/graph" "^5.1.1"
+    "@datastructures-js/heap" "^3.2.0"
+    "@datastructures-js/linked-list" "^5.1.1"
+    "@datastructures-js/priority-queue" "^5.3.0"
+    "@datastructures-js/queue" "^4.1.3"
+    "@datastructures-js/set" "^4.1.1"
+    "@datastructures-js/stack" "^3.1.2"
+    "@datastructures-js/trie" "^4.2.0"
 
 debug@^4.1.0, debug@^4.1.1:
   version "4.3.4"
