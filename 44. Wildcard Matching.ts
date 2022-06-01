@@ -1,4 +1,4 @@
-function isMatch(s: string, p: string): boolean {
+function isMatch2(s: string, p: string): boolean {
   if (s === "" || p === "*") return true;
 
   let patternIndex = 0;
@@ -47,26 +47,43 @@ function isMatch(s: string, p: string): boolean {
   return false;
 }
 
-// "abefcdgiescdfimde"
-// "ab**cd?i*******de"
+function isMatch(s: string, p: string): boolean {
+  if (p === "*") return true;
 
-// "a a xdceb"
-// "*ax *b"
+  let j = 0;
+  let i = 0;
 
-("miss issippi");
-("m??*s s*?i*pi");
+  const backtracking: { i: number; j: number }[] = [];
 
-("mississ ippi");
-("m??*ss  *?i*pi");
+  while (i < s.length) {
+    console.log(s[i], `s[${i}]`);
+    console.log(p[j], `p[${j}]`);
+    if (s[i] === p[j] || p[j] === "?") {
+      if (p[j - 1] === "*") backtracking.push({ i: i + 1, j: j });
+      i += 1;
+      j += 1;
+      continue;
+    } else {
+      if (p[j] === "*") {
+        backtracking.push({ i: i + 1, j: j + 1 });
+        j += 1;
+        continue;
+      } else if (p[j - 1] === "*") {
+        i += 1;
+        continue;
+      } else if (backtracking.length > 0) {
+        const backtrackPosition = backtracking.pop();
+        i = backtrackPosition.i;
+        j = backtrackPosition.j;
+        continue;
+      } else return false;
+    }
+  }
 
-// a == *
-// a == a
-// d == *
-// c == c
-// b == ?
+  if (p[j] == undefined) return true;
+  for (j; j < p.length; j++) if (p[j] !== "*") return false;
+  if (p[j - 1] === "*" && p[j] == undefined) return true;
+  return false;
+}
 
-// a == a
-// c == *
-// d == *
-// c == c
-// b == ?
+console.log(isMatch("", "****"));
