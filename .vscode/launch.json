@@ -12,7 +12,7 @@
       "program": "${file}",
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": ["${workspaceFolder}/out/**/*.js"],
-      //"console": "integratedTerminal", // shows the "real OS terminal" inside vs code
+      "console": "integratedTerminal", // shows the "real OS terminal" inside vs code
       "internalConsoleOptions": "openOnSessionStart" // automatically switch to debug console to see logs
      
     }
