@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-function reorderLogFiles(logs: string[]): string[] {
+function reorderLogFiles2(logs: string[]): string[] {
   const digitLogs: string[] = [];
 
   const letterLogs: string[] = [];
@@ -39,6 +39,35 @@ function reorderLogFiles(logs: string[]): string[] {
     return reorderedA > reorderedB ? 1 : -1;
   });
   return [...letterLogs, ...digitLogs];
+}
+
+function reorderLogFiles(logs: string[]): string[] {
+  const digitLogs: string[] = [];
+  const letterLogs: { log: string; formated: string }[] = [];
+
+  logs.forEach((log) => {
+    // It's digitLog - If last word is number, it should be a digitLog
+    if (!isNaN(+log[log.length - 1])) digitLogs.push(log);
+    else {
+      const [identifier, ...logContent] = log.split(" ");
+      const formatedLog =
+        logContent.reduce(
+          (reorderedLog, word) => (reorderedLog += word + " "),
+          ""
+        ) +
+        "aaa " +
+        identifier;
+
+      const indexToInsert = letterLogs.findIndex(
+        (log) => formatedLog < log.formated
+      );
+      if (indexToInsert !== -1)
+        letterLogs.splice(indexToInsert, 0, { log, formated: formatedLog });
+      else letterLogs.push({ log, formated: formatedLog });
+    }
+  });
+
+  return [...letterLogs.map((log) => log.log), ...digitLogs];
 }
 
 console.log(
