@@ -4,6 +4,8 @@
  * [703] Kth Largest Element in a Stream
  */
 
+import { MinHeap } from "./minHeap";
+
 // @lc code=start
 class KthLargest {
   minHeap = new MinHeap<number>();

@@ -12,4 +12,3 @@ function singleNumber(nums: number[]): number {
 
   return xorSum;
 }
-// @lc code=end
